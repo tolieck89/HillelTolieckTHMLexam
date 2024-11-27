@@ -1,0 +1,24 @@
+@import url('./fonts.scss');
+
+$main_green_colour: #B9FF66;
+$main_dark_colour: #191A23;
+$main_gray_colour: #F3F3F3;
+$white_color: white;
+$black_colour: black;
+
+@mixin black_button {
+    color: $white_color;
+    background-color: $main_dark_colour;
+    border-radius: 14px;
+    height: 68px;
+    box-sizing: border-box;
+    border: 1px  solid $main_dark_colour;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'SpaceGrotesk-Regular';
+}
+
+@mixin wrapper {
+    width: clamp(26.875rem, 67.785vw + 8.658rem, 90rem);
+    margin: 0 auto;
+}
