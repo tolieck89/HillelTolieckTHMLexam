@@ -459,14 +459,17 @@ a:hover {
 .services .services_green {
   border-radius: 8px;
   background-color: #B9FF66;
-  font-size: 2.5rem;
+  font-family: "SpaceGrotesk-SemiBold";
   font-weight: 500;
+  font-size: 40px;
+  line-height: 51px;
   padding: 0 7px;
 }
 .services .services_text {
+  font-family: "SpaceGrotesk-Regular";
+  font-weight: 400;
   font-size: 18px;
   line-height: 23px;
-  font-weight: 400;
   width: 580px;
 }
 
@@ -482,8 +485,9 @@ a:hover {
 .product_title {
   grid-area: title;
   font-size: 30px;
-  font-family: "SpaceGrotesk-Regular";
+  font-family: "SpaceGrotesk-SemiBold";
   font-weight: 500;
+  font-size: 30px;
   line-height: 38px;
   margin-left: 50px;
   margin-top: 50px;
@@ -496,8 +500,8 @@ a:hover {
   align-items: center;
   gap: 1rem;
   font-size: 1.25rem;
-  font-family: "SpaceGrotesk-Regular";
-  font-weight: 400;
+  font-family: "SpaceGrotesk-Light";
+  font-weight: 300;
 }
 
 .product_img {
@@ -506,9 +510,10 @@ a:hover {
 
 .product_card {
   display: grid;
-  border-radius: 45px;
+  box-sizing: border-box;
   border: 1px solid #191A23;
   border-bottom: 6px #191A23 solid;
+  border-radius: 45px;
   height: 310px;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "title prod_img" "learn_more prod_img";
@@ -519,9 +524,10 @@ a:hover {
 p {
   display: inline;
   padding: 0 7px;
-  font-size: 30px;
-  font-family: "SpaceGrotesk-Medium";
+  font-family: "SpaceGrotesk-SemiBold";
   font-weight: 500;
+  font-size: 30px;
+  line-height: 38px;
   border-radius: 7px;
 }
 
@@ -549,6 +555,200 @@ p {
   background-color: white;
 }
 
+.proposal_section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: clamp(26.875rem, 67.785vw + 8.658rem, 90rem);
+  margin: 0 auto;
+  margin-top: 124px;
+  background-color: #F3F3F3;
+  border-radius: 45px;
+  height: 348px;
+}
+
+.proposal_section_left {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  width: 500px;
+}
+
+.proposal_section_left-button {
+  color: white;
+  background-color: #191A23;
+  border-radius: 14px;
+  height: 68px;
+  box-sizing: border-box;
+  border: 1px solid #191A23;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "SpaceGrotesk-Regular";
+  width: 288px;
+}
+
+.proposal_section_left-text {
+  font-family: "SpaceGrotesk-Regular";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.proposal_section_left-title {
+  font-family: "SpaceGrotesk-SemiBold";
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 38px;
+}
+
+.dark_section_grid_cont {
+  display: grid;
+  width: clamp(26.875rem, 67.785vw + 8.658rem, 90rem);
+  margin: 0 auto;
+  background-color: #191A23;
+  border-radius: 45px;
+  grid-template-columns: 1fr 1px 1fr 1px 1fr;
+  gap: 4rem;
+  justify-content: center;
+  align-content: center;
+  height: 326px;
+  justify-items: center;
+  margin-top: 80px;
+}
+
+.dark_section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  width: 256px;
+}
+
+.dark_section-text {
+  font-family: "SpaceGrotesk-Regular";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: white;
+}
+
+.dark_section-learn_more {
+  display: flex;
+  gap: 1rem;
+  align-items: end;
+}
+
+.dark_section-learn_more-text {
+  font-family: "SpaceGrotesk-Regular";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #B9FF66;
+}
+
+.dark_section-vertical_line {
+  background-color: white;
+  width: 1px;
+}
+
+.accordion_grid_container {
+  display: grid;
+  grid-template-rows: 2fr repeat(5, 1fr);
+  gap: 30px;
+  width: clamp(26.875rem, 67.785vw + 8.658rem, 90rem);
+  margin: 0 auto;
+  height: 1224px;
+  justify-content: space-around;
+  margin-top: 80px;
+}
+
+.accordion_element_flex-inner {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.accordion_element_flex_open {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: space-around;
+  box-sizing: border-box;
+  border: 1px solid #191A23;
+  border-bottom: 6px #191A23 solid;
+  border-radius: 45px;
+  padding: 60px;
+}
+
+.accordion_element_flex {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  background-color: #F3F3F3;
+  padding: 0 60px;
+  box-sizing: border-box;
+  border: 1px solid #191A23;
+  border-bottom: 6px #191A23 solid;
+  border-radius: 45px;
+}
+
+.accordion_element-number {
+  font-family: "SpaceGrotesk-SemiBold";
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 51px;
+  font-size: 60px;
+  line-height: 76px;
+}
+
+.accordion_element-title {
+  font-family: "SpaceGrotesk-SemiBold";
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 38px;
+}
+
+.accordion_element_flex_open .accordion_element_flex {
+  border: none;
+  background-color: #B9FF66;
+  padding: 0;
+}
+
+.accordion_element_horizontal_line {
+  border-bottom: 1px solid black;
+}
+
+.accordion_element_text {
+  font-family: "SpaceGrotesk-Regular";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.comment_grid_container {
+  width: clamp(26.875rem, 67.785vw + 8.658rem, 90rem);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.comment_item_flex {
+  box-sizing: border-box;
+  border: 1px solid #191A23;
+  border-bottom: 6px #191A23 solid;
+  border-radius: 45px;
+  background-color: #F3F3F3;
+  display: flex;
+  flex-direction: column;
+  height: 332px;
+}
+
+.comment_item_top_flex {
+  display: flex;
+}
+
 @media screen and (max-width: 1105px) and (min-width: 430px) {
   .about_us_grid_container {
     grid-template-columns: 1fr;
@@ -562,5 +762,8 @@ p {
   }
   .brandline {
     flex-wrap: wrap;
+  }
+  .proposal_section_right {
+    display: none;
   }
 }/*# sourceMappingURL=styles.css.map */

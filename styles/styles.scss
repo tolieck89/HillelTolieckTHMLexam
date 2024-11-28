@@ -128,15 +128,12 @@ a{
     .services_green {
         border-radius: 8px;
         background-color: $main_green_colour;
-        font-size: 2.5rem;
-        font-weight: 500;
+        @include h2_titles;
         padding: 0 7px;
     }
 
     .services_text {
-        font-size: 18px;
-        line-height: 23px;
-        font-weight: 400;
+        @include p_text;
         width: 580px;
     }
 }
@@ -153,9 +150,7 @@ a{
 .product_title {
     grid-area: title;
     font-size: 30px;
-    font-family: 'SpaceGrotesk-Regular';
-    font-weight: 500;
-    line-height: 38px;
+    @include h3_titles;
     margin-left: 50px;
     margin-top: 50px;
 }
@@ -167,11 +162,8 @@ a{
     align-items: center;
     gap: 1rem;
     font-size: 1.25rem;
-    font-family: 'SpaceGrotesk-Regular';
-    font-weight: 400;
-
-
-
+    font-family: 'SpaceGrotesk-Light';
+    font-weight: 300;
 }
 
 .product_img {
@@ -180,10 +172,7 @@ a{
 
 .product_card {
     display: grid;
-    border-radius: 45px;
-    border: 1px solid $main_dark_colour;
-    border-bottom: 6px $main_dark_colour solid ;
-    
+    @include cute_border;
     height: 310px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
@@ -191,25 +180,18 @@ a{
     "learn_more prod_img";
     align-items: center;
     justify-content: center;
+}
 
-        
-        
-
-    }
-    p {
-        display: inline;
-        padding: 0 7px;
-        font-size: 30px;
-        font-family: 'SpaceGrotesk-Medium';
-        font-weight: 500;
-        border-radius: 7px;
-
-    }
+p {
+    display: inline;
+    padding: 0 7px;
+    @include h3_titles;
+    border-radius: 7px;
+}
 
 
 .green_div {
-    background-color: $main_green_colour;
-    
+    background-color: $main_green_colour; 
 }
 
 .gray_div {
@@ -221,8 +203,6 @@ a{
     .product_learn_more  {
         color: $white_color;
     }
-
-  
 }
 
 .product_img {
@@ -234,15 +214,164 @@ a{
     background-color:  $white_color;
 }
 
+.proposal_section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @include wrapper;
+    margin-top: 124px;
+    background-color: $main_gray_colour;
+    border-radius: $border-radius_big;
+    height: 348px;
+}
+
+
+.proposal_section_left {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    width: 500px;
+}
+
+.proposal_section_left-button {
+    @include black_button;
+    width: 288px;
+}
+
+.proposal_section_left-text{
+    @include p_text;
+}
+
+.proposal_section_left-title {
+    @include h3_titles;
+}
+
+.dark_section_grid_cont {
+    display: grid;
+    @include wrapper;
+    background-color: $main_dark_colour;
+    border-radius: $border-radius_big;
+    grid-template-columns: 1fr 1px 1fr 1px 1fr;
+    gap: 4rem;
+    justify-content: center;
+    align-content: center;
+    height: 326px;
+    justify-items: center;
+    margin-top: 80px;
+}
+
+.dark_section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    width: 256px;
+}
+
+.dark_section-text {
+    @include p_text;
+    color: $white_color;
+}
+
+.dark_section-learn_more {
+    display: flex;
+    gap: 1rem;
+    align-items: end;
+}
+
+.dark_section-learn_more-text {
+    @include learn_more_text;
+    color: $main_green_colour;
+}
+
+.dark_section-vertical_line {
+    background-color: $white_color;
+    width: 1px;
+}
+
+.accordion_grid_container {
+    display: grid;
+    grid-template-rows: 2fr repeat(5, 1fr);
+    gap: 30px;
+    @include wrapper;
+    height: 1224px;
+    justify-content: space-around;
+    margin-top: 80px;
+
+}
+
+.accordion_element_flex-inner {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.accordion_element_flex_open {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+   justify-content: space-around;
+    // align-items: center; 
+    @include cute_border;
+        padding: 60px;
+}
+
+
+.accordion_element_flex{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    background-color: $main_gray_colour;
+    padding: 0 60px;
+    @include cute_border;
+}
 
 
 
+.accordion_element-number{
+    @include h2_titles;
+    font-size: 60px;
+    line-height: 76px;
+}
 
+.accordion_element-title {
+    @include h3_titles;
+}
 
+.accordion_element_flex_open .accordion_element_flex {
+    border: none;
+    background-color: $main_green_colour;
+    padding: 0;
+}
 
+.accordion_element_horizontal_line {
+    border-bottom: 1px solid $black_colour;
+    // width: 1140p;
+}
 
+.accordion_element_text {
+    @include p_text;
+}
 
+.comment_grid_container {
+    @include wrapper;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
 
+.comment_item_flex {
+    @include cute_border;
+    background-color: $main_gray_colour;
+    display: flex;
+    flex-direction: column;
+    height: 332px;
+}
+
+.comment_item_top_flex {
+    display: flex;
+}
 
 
 
@@ -271,6 +400,10 @@ a{
 
         .brandline {
             flex-wrap: wrap;
+        }
+
+        .proposal_section_right {
+            display: none;
         }
 
     }
