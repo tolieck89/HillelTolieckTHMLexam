@@ -1,0 +1,48 @@
+@import url("./fonts.scss");
+.dark_section_grid_cont {
+  display: grid;
+  background-color: #191A23;
+  border-radius: 45px;
+  grid-template-columns: 1fr 1px 1fr 1px 1fr;
+  gap: 4rem;
+  justify-content: center;
+  align-content: center;
+  height: 326px;
+  justify-items: center;
+  margin-top: 80px;
+}
+
+.dark_section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  width: 256px;
+}
+
+.dark_section-text {
+  font-family: "SpaceGrotesk-Regular";
+  font-weight: 400;
+  font-size: clamp(1rem, 0.9639rem + 0.1342vw, 1.125rem);
+  line-height: clamp(1.438rem, 0.067vw + 1.419rem, 1.5rem);
+  color: white;
+}
+
+.dark_section-learn_more {
+  display: flex;
+  gap: 1rem;
+  align-items: end;
+}
+
+.dark_section-learn_more-text {
+  font-family: "SpaceGrotesk-Regular";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #B9FF66;
+}
+
+.dark_section-vertical_line {
+  background-color: white;
+  width: 1px;
+}/*# sourceMappingURL=dark_section.css.map */

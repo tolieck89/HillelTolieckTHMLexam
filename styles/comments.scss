@@ -1,0 +1,57 @@
+@import "./vars.scss";
+
+.comment_grid_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(1.875rem, 0.658vw + 1.711rem, 2.5rem);
+    margin-top: clamp(2.5rem, 2.632vw + 1.842rem, 5rem);
+}
+
+.comment_item_flex {
+    @include cute_border;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 28px;
+    padding: 40px 35px 65px;    
+    height: 334px;   
+    width: 387px; 
+}
+
+.comment_item-line {
+    height: 1px;
+    background-color: black;
+}
+
+.comment_item_top_flex {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.comment_item_top--text-name {
+    font-family: 'SpaceGrotesk-Regular';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px; 
+    flex-wrap: nowrap;
+}
+
+.comment_item_top--text-comment_item_top-text {
+@include p_text;
+flex-wrap: nowrap;
+}
+
+.comment_item_top--text {
+    align-self: flex-end;
+    margin-left: 30px;
+}
+
+.comment_item_top--lindn_item {
+    position: absolute;
+   left: 283px;
+}
+
+.comment-text {
+    @include p_text;
+}

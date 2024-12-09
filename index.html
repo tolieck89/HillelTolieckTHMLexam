@@ -3,18 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Positivus</title>
 </head>
 <body>
     
     <header class="header">
         <div class="logo_header">
-       
             
+            <nav class="burger-header-navigation">
+                <div class="hamburger">
+                  <input type="checkbox" />
+                  <div class="burger-menu-icons">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+      
+                  <ul class="header-navigation-menu">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">New Use Cases</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><button class="white_button" type="button">Request a quote</button></li>
+
+                  </ul>
+                </div>
+              </nav>
+            <div class="logo_burger">
             <div><img src="img/logo_star.svg" alt=""></div>
             <div><img src="img/positivus_logo.svg" alt=""></div>
-            
+        </div>
+
         </div>
 
         <nav class="navigation">
@@ -338,21 +359,184 @@
             <div class="comment-text">2+ years of experience in writing and editing
                 Skilled in creating compelling, SEO-optimized content for various industries</div>
         </div>
+        </div>
 
-
-
-
-
-
-        
-
-
-        
-
+        <div class="services">
+            <div class="services_green">Testimonials </div>
+            <div class="services_text">Hear from Our Satisfied Clients: Read Our Testimonials <br> to Learn More about Our Digital Marketing Services</div>
         </div>
 
 
+        <section class="slider_container">
 
+            <div class="boxes">
+            <div class="box first_box">
+                <div class="content">
+                  "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. 
+                  The team is professional, responsive, and truly cares about the success of our business. 
+                  We highly recommend Positivus to any company looking to grow their online presence."
+                </div>
+            </div>
+            <!-- <div class="box second_box">
+                <div class="content">
+                  "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. 
+                  The team is professional, responsive, and truly cares about the success of our business. 
+                  We highly recommend Positivus to any company looking to grow their online presence."
+                </div>
+            </div>
+            <div class="box third_box">
+                <div class="content">
+                  "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. 
+                  The team is professional, responsive, and truly cares about the success of our business. 
+                  We highly recommend Positivus to any company looking to grow their online presence."
+                </div>
+            </div>
+            <div class="box fourth_box">
+                <div class="content">
+                  "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. 
+                  The team is professional, responsive, and truly cares about the success of our business. 
+                  We highly recommend Positivus to any company looking to grow their online presence."
+                </div>
+            </div>
+            <div class="box fifth_box">
+                <div class="content">
+                  "We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. 
+                  The team is professional, responsive, and truly cares about the success of our business. 
+                  We highly recommend Positivus to any company looking to grow their online presence."
+                </div> -->
+            </div>
+          
+        </div>
+            <div class="radio_buttons_line">
+                <div class="arrow_prev">
+
+                </div>
+                <div class="switch">
+                    <input type="radio" name="slider" id="first_one" checked> 
+                    <input type="radio" name="slider" id="second_one">
+                    <input type="radio" name="slider" id="third_one">
+                    <input type="radio" name="slider" id="fourth_one">
+                    <input type="radio" name="slider" id="fifth_one">
+
+                    <div class="controls">
+                        <label for="first_one"></label>
+                        <label for="second_one"></label>
+                        <label for="third_one"></label>
+                        <label for="fourth_one"></label>
+                        <label for="fifth_one"></label>
+                    </div>
+
+                </div>
+                <div class="arrow_next">
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <div class="services">
+            <div class="services_green">Contact Us</div>
+            <div class="services_text">Connect with Us: Let's Discuss Your <br> Digital Marketing Needs</div>
+        </div>
+
+        <div class="form_flex">
+                <div class="forms_radio">
+                    <div>
+                    <input type="radio" name="form_radio" id="say_hi" checked>
+                    <label for="say_hi">Say Hi</label>
+                </div>
+                <div>
+                    <input type="radio" name="form_radio" id="qoute">
+                    <label for="qoute">Get a Quote</label>
+                </div>
+                </div>
+                
+                <div class="inner_form_flex">
+
+                    <div class="inner_form">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Name">
+                    </div>
+
+                    <div class="inner_form">
+                        <label for="name">Email*</label>
+                        <input type="email" id="email" placeholder="Email">
+                    </div>
+
+                    <div class="inner_form">
+                        <label for="message">Message*</label>
+                        <input type="text" id="message" placeholder="Message">
+                    </div>
+
+                    <button class="black_button">Send Message</button>
+
+                </div>
+
+            </div>
+        
+            <footer class="footer_flex">
+
+                <div class="footer_top_line_flex">
+                    <div class="footer_top_line_logo">
+                        <img src="./img/logos/logo_white.svg" alt="logo">
+                    </div>
+                    <nav class="footer_top_line_nav_flex">
+                        
+                        <ul class="footer_top_line_nav">
+                            <li ><a href="#">About us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Use Cases</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+
+                    </nav>
+                    <div class="footer_rop_line_soc_media_flex">
+                        <div class="footer_rop_line_soc_media_"> <img src="./img/icons/in_icon.png" alt="in_icon"></div>
+                        <div class="footer_rop_line_soc_media_"> <img src="./img/icons/facebook_icon.png" alt="facebook_icon"></div>
+                        <div class="footer_rop_line_soc_media_"> <img src="./img/icons/twitter_icon.png" alt="twitter_icon"></div>
+                    </div>
+                </div>
+
+                <div class="bottom_flex">
+                    <div class="middle_flex">
+                        <div class="footer_middle_left_flex">
+                            <div class="footer_aux_flex">
+                                <p class="services_green">Contact us:</p>
+                            </div>
+                            <div>Email: info@positivus.com</div>
+                            <div>Phone: 555-567-8901</div>
+                            <div>
+                                <p class="footer_middle_left_flex_p">Address: 1234 Main St</p> <br>
+                                <p class="footer_middle_left_flex_p"> Moonstone City, Stardust State 12345</p>
+                            </div>
+                            
+                        </div>
+
+                        <div class="footer_middle_right_flex">
+                            <input type="email" placeholder="Email">
+                            <button class="footer_middle_right_news">Subscribe to news</button>
+                        </div>
+
+                    </div>
+
+                    <div class="footer_middle_bottom_line_flex">
+                    <div class="footer_middle_bottom_line_flex_text">
+                        <div class="footer_middle_bottom_line">© 2023 Positivus. All Rights Reserved.</div>
+                        <div class="footer_middle_bottom_line"><a href="#">Privacy Policy</a></div>
+                    </div>
+                </div>
+                </div>
+
+
+
+
+
+
+            </footer>
+
+        
 
 
 </body>

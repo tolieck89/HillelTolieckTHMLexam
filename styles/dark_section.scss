@@ -1,0 +1,43 @@
+@import "./vars.scss";
+
+.dark_section_grid_cont {
+    display: grid;
+    background-color: $main_dark_colour;
+    border-radius: $border-radius_big;
+    grid-template-columns: 1fr 1px 1fr 1px 1fr;
+    gap: 4rem;
+    justify-content: center;
+    align-content: center;
+    height: 326px;
+    justify-items: center;
+    margin-top: 80px;
+}
+
+.dark_section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    width: 256px;
+}
+
+.dark_section-text {
+    @include p_text;
+    color: $white_color;
+}
+
+.dark_section-learn_more {
+    display: flex;
+    gap: 1rem;
+    align-items: end;
+}
+
+.dark_section-learn_more-text {
+    @include learn_more_text;
+    color: $main_green_colour;
+}
+
+.dark_section-vertical_line {
+    background-color: $white_color;
+    width: 1px;
+}

@@ -1,0 +1,148 @@
+@import url("./fonts.scss");
+.footer_flex {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background-color: #191A23;
+  border-radius: 45px;
+  margin-top: 140px;
+}
+
+.footer_top_line_flex {
+  margin-top: 58px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer_top_line_nav_flex {
+  align-content: center;
+}
+.footer_top_line_nav_flex .footer_top_line_nav li a {
+  font-family: "SpaceGrotesk-Regular";
+  font-weight: 400;
+  font-size: clamp(1rem, 0.9639rem + 0.1342vw, 1.125rem);
+  line-height: clamp(1.438rem, 0.067vw + 1.419rem, 1.5rem);
+  color: white;
+  text-decoration: underline;
+}
+
+.footer_rop_line_soc_media_flex {
+  display: flex;
+  gap: 20px;
+}
+
+.footer_middle_left_flex_p {
+  font-family: "SpaceGrotesk-Regular";
+  font-weight: 400;
+  font-size: clamp(1rem, 0.9639rem + 0.1342vw, 1.125rem);
+  line-height: clamp(1.438rem, 0.067vw + 1.419rem, 1.5rem);
+  padding: 0;
+}
+
+.bottom_flex {
+  display: flex;
+  flex-direction: column;
+  margin-top: 66px;
+  gap: 50px;
+  align-content: space-around;
+}
+
+.middle_flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer_middle_left_flex {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer_middle_left_flex {
+  font-family: "SpaceGrotesk-Regular";
+  font-weight: 400;
+  font-size: clamp(1rem, 0.9639rem + 0.1342vw, 1.125rem);
+  line-height: clamp(1.438rem, 0.067vw + 1.419rem, 1.5rem);
+  color: white;
+}
+
+.footer_aux_flex {
+  display: flex;
+}
+.footer_aux_flex .services_green {
+  color: black;
+  font-family: "SpaceGrotesk-SemiBold";
+  font-weight: 500;
+  font-size: clamp(1.125rem, 1.0889rem + 0.1342vw, 1.25rem);
+  line-height: clamp(1.438rem, 0.201vw + 1.383rem, 1.625rem);
+}
+
+.footer_middle_right_flex {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  background-color: #292A32;
+  border-radius: 45px;
+  align-items: center;
+  padding: 58px 40px;
+}
+.footer_middle_right_flex input {
+  font-family: "SpaceGrotesk-Regular";
+  font-weight: 400;
+  font-size: clamp(1rem, 0.9639rem + 0.1342vw, 1.125rem);
+  line-height: clamp(1.438rem, 0.067vw + 1.419rem, 1.5rem);
+  color: white;
+  border: 1px white solid;
+  border-radius: 14px;
+  padding-left: 35px;
+  width: 285px;
+  height: 67px;
+  background-color: #292A32;
+}
+.footer_middle_right_flex ::-moz-placeholder {
+  color: white;
+}
+.footer_middle_right_flex ::placeholder {
+  color: white;
+}
+.footer_middle_right_flex .footer_middle_right_news {
+  color: white;
+  background-color: #191A23;
+  border-radius: 14px;
+  height: 68px;
+  box-sizing: border-box;
+  border: 1px solid #191A23;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "SpaceGrotesk-Regular";
+  line-height: 28px;
+  background-color: #B9FF66;
+  color: black;
+  padding: auto 35px;
+  width: 249px;
+}
+
+.footer_middle_bottom_line_flex {
+  display: flex;
+  justify-content: center;
+}
+
+.footer_middle_bottom_line_flex_text {
+  display: flex;
+  gap: 40px;
+  justify-content: left;
+  width: clamp(56.25rem, 36.913vw + 32.58rem, 76.875rem);
+  border-top: 1px solid white;
+}
+.footer_middle_bottom_line_flex_text .footer_middle_bottom_line {
+  padding: 50px 0;
+  color: white;
+  font-family: "SpaceGrotesk-Regular";
+  font-weight: 400;
+  font-size: clamp(1rem, 0.9639rem + 0.1342vw, 1.125rem);
+  line-height: clamp(1.438rem, 0.067vw + 1.419rem, 1.5rem);
+}
+.footer_middle_bottom_line_flex_text .footer_middle_bottom_line a {
+  text-decoration: underline;
+  color: white;
+}/*# sourceMappingURL=footer.css.map */

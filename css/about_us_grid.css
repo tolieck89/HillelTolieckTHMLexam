@@ -1,0 +1,57 @@
+@import url("./fonts.scss");
+.left_top {
+  grid-area: left_top;
+  font-family: "SpaceGrotesk-SemiBold";
+  font-size: clamp(2.6875rem, 2.3809rem + 1.1409vw, 3.75rem);
+  font-weight: 500;
+  line-height: clamp(3.438rem, -2.349vw + 4.069rem, 1.25rem);
+}
+
+.left_middle {
+  grid-area: left_middle;
+  font-size: 1.25em;
+  font-family: "SpaceGrotesk-Regular";
+  line-height: 1.625em;
+}
+
+.left_bottom {
+  grid-area: left_bottom;
+  margin-top: 20px;
+  align-items: bottom;
+}
+.left_bottom a {
+  background-color: #191A23;
+  color: #FFFFFF;
+}
+
+.right_column {
+  grid-area: right_column;
+  justify-self: right;
+}
+
+.about_us_grid_container {
+  margin: 0 auto;
+  width: clamp(26.875rem, 67.785vw + 8.658rem, 90rem);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "left_top right_column" "left_middle right_column" "left_bottom right_column";
+  row-gap: clamp(1rem, 3.02vw - 0.187rem, 3.438rem);
+  margin-top: clamp(2.5rem, 2.013vw + 1.959rem, 4.375rem);
+  -moz-column-gap: 70px;
+       column-gap: 70px;
+}
+
+.black_button {
+  color: white;
+  background-color: #191A23;
+  border-radius: 14px;
+  height: 68px;
+  box-sizing: border-box;
+  border: 1px solid #191A23;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "SpaceGrotesk-Regular";
+  line-height: 28px;
+  width: 246px;
+}/*# sourceMappingURL=about_us_grid.css.map */

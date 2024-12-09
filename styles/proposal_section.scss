@@ -1,0 +1,32 @@
+@import "./vars.scss";
+
+.proposal_section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 124px;
+    background-color: $main_gray_colour;
+    border-radius: $border-radius_big;
+    height: 348px;
+}
+
+
+.proposal_section_left {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    width: 500px;
+}
+
+.proposal_section_left-button {
+    @include black_button;
+    width: 288px;
+}
+
+.proposal_section_left-text{
+    @include p_text;
+}
+
+.proposal_section_left-title {
+    @include h3_titles;
+}

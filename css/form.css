@@ -1,0 +1,64 @@
+@charset "UTF-8";
+@import url("./fonts.scss");
+.form_flex {
+  background-color: #F3F3F3;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  background-image: url("../img/form_back_png.png");
+  background-repeat: no-repeat; /* відключення повторення картинки */
+  background-position: right center;
+  background-size: auto;
+}
+
+.forms_radio {
+  display: flex;
+  gap: 36px;
+  margin-top: 60px;
+  margin-left: 100px;
+}
+.forms_radio label {
+  font-family: "SpaceGrotesk-Regular";
+  font-weight: 400;
+  font-size: clamp(1rem, 0.9639rem + 0.1342vw, 1.125rem);
+  line-height: clamp(1.438rem, 0.067vw + 1.419rem, 1.5rem);
+}
+
+.inner_form_flex {
+  flex-direction: column;
+  display: flex;
+  gap: 25px;
+  margin-left: 100px;
+  margin-top: 40px;
+}
+.inner_form_flex .black_button {
+  width: clamp(9.375rem, 45.414vw - 19.747rem, 34.75rem);
+  margin-bottom: 80px;
+}
+
+.inner_form label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: "SpaceGrotesk-Regular";
+  font-weight: 400;
+  font-size: clamp(1rem, 0.9639rem + 0.1342vw, 1.125rem);
+  line-height: clamp(1.438rem, 0.067vw + 1.419rem, 1.5rem);
+  font-size: 16px;
+}
+
+.inner_form input {
+  border-radius: 14px;
+  border: 1px solid black;
+  height: 60px;
+  width: clamp(9.375rem, 45.414vw - 19.747rem, 34.75rem);
+  padding-left: 30px;
+  font-family: "SpaceGrotesk-Regular";
+  font-weight: 400;
+  font-size: clamp(1rem, 0.9639rem + 0.1342vw, 1.125rem);
+  line-height: clamp(1.438rem, 0.067vw + 1.419rem, 1.5rem);
+}
+
+#message {
+  height: clamp(3.75rem, 14.541vw - 5.575rem, 11.875rem);
+}/*# sourceMappingURL=form.css.map */

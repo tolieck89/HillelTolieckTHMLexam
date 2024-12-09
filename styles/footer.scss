@@ -1,0 +1,129 @@
+@import "./vars.scss";
+
+.footer_flex {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: $main_dark_colour;
+    border-radius: $border-radius_big;
+    margin-top: 140px;
+    }
+
+.footer_top_line_flex {
+    margin-top: 58px;
+    display: flex;
+    justify-content: space-around;
+    }
+
+.footer_top_line_nav_flex  {
+    align-content: center;
+
+    .footer_top_line_nav li a{
+        @include p_text;
+        color: white;
+        text-decoration: underline;
+        }
+    }
+    
+    .footer_rop_line_soc_media_flex {
+    display: flex;
+    gap: 20px;
+    }
+
+.footer_middle_left_flex_p {
+    @include p_text;
+    padding: 0;
+    }
+
+
+.bottom_flex {
+    display: flex;
+    flex-direction: column;
+    margin-top: 66px;
+    gap: 50px;
+    align-content: space-around;
+    }
+
+.middle_flex {
+    display: flex;
+    justify-content: space-around;
+    }
+
+.footer_middle_left_flex {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    }
+           
+.footer_middle_left_flex{
+    @include p_text;
+    color: white;
+    }
+
+.footer_aux_flex {
+    display: flex;
+    
+    .services_green {
+        color: black;
+        @include h4_titles;
+        }
+    }
+                      
+.footer_middle_right_flex {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    background-color: $dark_gray;
+    border-radius: $border-radius_big;
+    // width: 634px;
+    align-items: center;
+    padding: 58px 40px;
+
+    & input {
+        @include p_text;
+        color: white;
+        border: 1px white solid;
+        border-radius: $border-radius_small;
+        padding-left: 35px;
+        width: 285px;
+        height: 67px;
+        background-color: $dark_gray;
+        }
+        
+    ::placeholder {
+        color: white;}
+        
+        .footer_middle_right_news {
+            @include black_button;
+            background-color: $main_green_colour;
+            color: black;
+            padding: auto 35px;
+            width: 249px;
+            }
+        }
+
+    .footer_middle_bottom_line_flex {
+        display: flex;
+        justify-content: center;
+        }
+
+        .footer_middle_bottom_line_flex_text {
+            display: flex;
+            gap: 40px;
+            justify-content:left; 
+            width: clamp(56.25rem, 36.913vw + 32.58rem, 76.875rem);
+            border-top: 1px solid white;
+                
+
+            .footer_middle_bottom_line {
+                padding: 50px 0;
+                color: white;
+                @include p_text;
+
+                    a {
+                        text-decoration: underline;
+                        color: white;
+                    }
+                }
+            }
+

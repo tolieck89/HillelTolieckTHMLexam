@@ -1,0 +1,97 @@
+@import url("./fonts.scss");
+@media screen and (max-width: 600px) {
+  .product_card {
+    grid-template-areas: "title title" "learn_more prod_img";
+  }
+}
+@media screen and (max-width: 1430px) {
+  .comment_grid_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 907px) {
+  .comment_grid_container {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+}
+@media screen and (max-width: 1105px) and (min-width: 430px) {
+  .header .navigation {
+    display: none;
+  }
+  .header .logo_header {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .header .burger-header-navigation {
+    display: inline-flex;
+  }
+  .header .burger-header-navigation li {
+    list-style: none;
+  }
+  .about_us_grid_container {
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "left_top" "right_column" "left_middle" "left_bottom";
+  }
+  .right_column {
+    height: auto;
+    justify-self: center;
+  }
+  .left_bottom .black_button {
+    width: 100%;
+  }
+  .brandline {
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 30px;
+  }
+  .proposal_section_right {
+    display: none;
+  }
+  .proposal_section_left {
+    justify-content: center;
+  }
+  .proposal_section_left-button {
+    width: 100%;
+  }
+  .services {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .product_grid {
+    grid-template-columns: 1fr;
+  }
+  .product_learn_more p {
+    display: none;
+  }
+  .accordion_element-number {
+    font-family: "SpaceGrotesk-SemiBold";
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .accordion_element-title {
+    font-family: "SpaceGrotesk-Regular";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 500;
+  }
+}
+@media screen and (max-width: 660px) and (min-width: 430px) {
+  .right_column img {
+    width: clamp(22.563rem, 103.913vw - 5.364rem, 37.5rem);
+  }
+  .about_us_grid_container {
+    margin: 0 34px;
+  }
+  .header {
+    margin-left: 34px;
+    margin-right: 34px;
+  }
+  .black_button {
+    width: 100%;
+  }
+}/*# sourceMappingURL=media_queries.css.map */

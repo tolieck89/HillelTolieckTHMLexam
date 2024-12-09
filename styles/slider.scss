@@ -1,0 +1,119 @@
+@import "./vars.scss";
+
+.slider_container {
+    display: flex;
+    flex-direction: column;
+    background-color: $main_dark_colour;
+    border-radius: $border-radius_big;
+    height: 626px;
+    margin-bottom: 100px;
+    margin-top: 80px;
+    position: relative;
+    align-items: center;
+    }
+
+.content {
+    border-radius: $border-radius_big;
+    border: $main_green_colour solid 2px;
+    width: 606px;
+    height: 238px;
+    margin-top: 84px;
+    @include p_text;
+    box-sizing: border-box;
+    padding: 48px 52px 80px;
+    color: $white_color;
+    position: relative;
+    background:$main_dark_colour; 
+    z-index: 2;
+    }    
+              
+.content::before {
+    content: '';
+    position: absolute;
+    bottom: -21px; 
+    left: 51px; 
+    width: 38px; 
+    height: 38px; 
+    border-left: 2px solid $main_green_colour;
+    border-bottom: 2px solid $main_green_colour;
+    transform: rotate(-45deg);
+    background: transparent;
+    }
+              
+.content::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; 
+    left: 46px;
+    width: 50px ;
+    right: 0;
+    height: 20px; 
+    background:$main_dark_colour; 
+    z-index: 1;
+    }
+
+            
+.boxes {
+    display: flex;
+    gap: 50px;
+    transition: transform 0.5s ease; 
+    }
+
+.switch   input {
+    display: none;
+    }
+
+.controls {
+    position: absolute;
+    bottom: 68px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    }
+
+.controls label {
+    width: 14px;
+    height: 14px;
+    background-image: url('../img/slider/white_star.png');
+    cursor: pointer;
+    transition: 0.3s;
+    }
+
+ .switch input:nth-child(1):checked ~ .controls label:nth-child(1),
+ .switch input:nth-child(2):checked ~ .controls label:nth-child(2),
+ .switch input:nth-child(3):checked ~ .controls label:nth-child(3),
+ .switch input:nth-child(4):checked ~ .controls label:nth-child(4),
+ .switch input:nth-child(5):checked ~ .controls label:nth-child(5) {
+    background-image: url('../img/slider/green_star.png');
+    }
+
+
+#first_one:checked ~ .boxes .first_box,
+#second_one:checked ~ .boxes .second_box,
+#third_one:checked ~ .boxes .third_box,
+#fourth_one:checked ~ .boxes .fourth_box,
+#fifth_one:checked ~ .boxes .fifth_box {
+    opacity: 1;
+    pointer-events: auto;
+    }
+            
+#first_one:checked ~ .boxes {
+    transform: translateX(0);
+    }
+
+#second_one:checked ~ .boxes {
+    transform: translateX(-100%);
+    }
+
+#third_one:checked ~ .boxes {
+    transform: translateX(-200%);
+    }
+
+#fourth_one:checked ~ .boxes {
+    transform: translateX(-300%);
+    }
+
+#fifth_one:checked ~ .boxes {
+    transform: translateX(-400%);
+    }

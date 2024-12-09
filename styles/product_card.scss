@@ -1,0 +1,76 @@
+@import "./vars.scss";
+
+.product_grid {
+    margin-top: 80px;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.product_title {
+    grid-area: title;
+    font-size: 30px;
+    @include h3_titles;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.product_learn_more {
+    grid-area: learn_more;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.25rem;
+    font-family: 'SpaceGrotesk-Light';
+    font-weight: 300;
+}
+
+.product_img {
+    grid-area: prod_img;
+}
+
+.product_card {
+    display: grid;
+    @include cute_border;
+    height: 310px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "title prod_img"
+    "learn_more prod_img";
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    display: inline;
+    padding: 0 7px;
+    @include h3_titles;
+    border-radius: 7px;
+}
+
+
+.green_div {
+    background-color: $main_green_colour; 
+}
+
+.gray_div {
+    background-color: $main_gray_colour;
+}
+
+.dark_div {
+    background-color: $main_dark_colour;
+    .product_learn_more  {
+        color: $white_color;
+    }
+}
+
+.product_img {
+    align-self: center;
+    justify-self: center;
+}
+
+.white_div{
+    background-color:  $white_color;
+}

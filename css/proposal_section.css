@@ -1,0 +1,45 @@
+@import url("./fonts.scss");
+.proposal_section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 124px;
+  background-color: #F3F3F3;
+  border-radius: 45px;
+  height: 348px;
+}
+
+.proposal_section_left {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  width: 500px;
+}
+
+.proposal_section_left-button {
+  color: white;
+  background-color: #191A23;
+  border-radius: 14px;
+  height: 68px;
+  box-sizing: border-box;
+  border: 1px solid #191A23;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "SpaceGrotesk-Regular";
+  line-height: 28px;
+  width: 288px;
+}
+
+.proposal_section_left-text {
+  font-family: "SpaceGrotesk-Regular";
+  font-weight: 400;
+  font-size: clamp(1rem, 0.9639rem + 0.1342vw, 1.125rem);
+  line-height: clamp(1.438rem, 0.067vw + 1.419rem, 1.5rem);
+}
+
+.proposal_section_left-title {
+  font-family: "SpaceGrotesk-SemiBold";
+  font-weight: 500;
+  font-size: clamp(1.625rem, 1.5529rem + 0.2685vw, 1.875rem);
+  line-height: clamp(2.063rem, 0.336vw + 1.972rem, 2.375rem);
+}/*# sourceMappingURL=proposal_section.css.map */

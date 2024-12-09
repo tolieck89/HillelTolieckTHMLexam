@@ -6,6 +6,8 @@ $main_gray_colour: #F3F3F3;
 $white_color: white;
 $black_colour: black;
 $border-radius_big: 45px;
+$border-radius_small: 14px;
+$dark_gray: #292A32;
 
 @mixin black_button {
     color: $white_color;
@@ -17,6 +19,12 @@ $border-radius_big: 45px;
     font-size: 20px;
     font-weight: 400;
     font-family: 'SpaceGrotesk-Regular';
+    line-height: 28px;
+}
+
+@mixin gray45{
+    background-color: $main_gray_colour;
+    border-radius: $border-radius_small;
 }
 
 @mixin wrapper {
@@ -24,26 +32,43 @@ $border-radius_big: 45px;
     margin: 0 auto;
 }
 
+@mixin h1_titles
+{
+    font-family: 'SpaceGrotesk-SemiBold';
+    font-size: clamp(2.6875rem, 2.3809rem + 1.1409vw, 3.75rem);
+    font-weight: 500;
+    line-height: clamp(3.438rem, -2.349vw + 4.069rem, 1.25rem);
+     
+}
+
 @mixin h3_titles {
     font-family: 'SpaceGrotesk-SemiBold';
     font-weight: 500;
-    font-size: 30px;
-    line-height: 38px;
+    font-size: clamp(1.625rem, 1.5529rem + 0.2685vw, 1.875rem);
+    line-height: clamp(2.063rem, 0.336vw + 1.972rem, 2.375rem);
 }
 
 @mixin p_text {
     font-family: 'SpaceGrotesk-Regular';
     font-weight: 400;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: clamp(1rem, 0.9639rem + 0.1342vw, 1.125rem);
+    line-height: clamp(1.438rem, 0.067vw + 1.419rem, 1.5rem);
 }
 
 @mixin h2_titles {
     font-family: 'SpaceGrotesk-SemiBold';
     font-weight: 500;
-    font-size: 40px;
-    line-height: 51px;
+    font-size: clamp(2.25rem, 2.1779rem + 0.2685vw, 2.5rem);
+    line-height: clamp(2.875rem, 0.336vw + 2.785rem, 3.188rem); 
 }
+
+    @mixin h4_titles {
+        font-family: 'SpaceGrotesk-SemiBold';
+        font-weight: 500;
+        font-size: clamp(1.125rem, 1.0889rem + 0.1342vw, 1.25rem);
+        line-height: clamp(1.438rem, 0.201vw + 1.383rem, 1.625rem);
+    }
+
 
 @mixin learn_more_text {
     font-family: 'SpaceGrotesk-Regular';

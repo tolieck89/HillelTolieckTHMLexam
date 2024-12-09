@@ -1,0 +1,61 @@
+@import "./vars.scss";
+
+.accordion_grid_container {
+    display: grid;
+    grid-template-rows: 2fr repeat(5, 1fr);
+    gap: 30px;
+    height: 1224px;
+    justify-content: space-around;
+    margin-top: 80px;
+
+}
+
+.accordion_element_flex-inner {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.accordion_element_flex_open {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+   justify-content: space-around;
+    // align-items: center; 
+    @include cute_border;
+        padding: 60px;
+}
+
+.accordion_element_flex{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    background-color: $main_gray_colour;
+    padding: 0 60px;
+    @include cute_border;
+}
+
+.accordion_element-number{
+    @include h2_titles;
+    font-size: 60px;
+    line-height: 76px;
+}
+
+.accordion_element-title {
+    @include h3_titles;
+}
+
+.accordion_element_flex_open .accordion_element_flex {
+    border: none;
+    background-color: $main_green_colour;
+    padding: 0;
+}
+
+.accordion_element_horizontal_line {
+    border-bottom: 1px solid $black_colour;
+}
+
+.accordion_element_text {
+    @include p_text;
+}
